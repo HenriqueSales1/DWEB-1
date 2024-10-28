@@ -19,6 +19,15 @@
         <label for="senha">Senha</label>
         <input type="password" name="senha" placeholder="Senha">
         <br> <br>
+        <label for="estado">Estado</label>
+        <select name="estado" id="estado">
+            <option value="null" selected> - Escolha seu estado - </option>
+            <option value="ES">Espírito Santo</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="SP">São Paulo</option>
+        </select>
+        <br> <br>
         <label for="termos">Aceito os termos e condições</label>
         <input type="checkbox" name="termos" id="termos">
         <br> <br>
@@ -58,9 +67,14 @@
         <input type="url" name="site" id="site" placeholder="https://exemplo.com.br">
         <br><br>
         <label for="cpf">CPF</label>
-        <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00" pattern="^\d{3}\.\d{3}\.\d{3}-\d{2}$" required>
+        <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00" pattern="^\d{3}\.\d{3}\.\d{3}-\d{2}$"
+            required>
+        <br><br>
+        <label for="comentario">Comentários</label>
+        <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
         <br><br>
         <button>Enviar</button>
+        <br><br>
         <button type="reset">Cancelar</button>
     </form>
 </body>
