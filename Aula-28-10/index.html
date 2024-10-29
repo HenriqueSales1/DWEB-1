@@ -71,7 +71,7 @@
         <fieldset>
             <legend>Perfil</legend>
             <label for="nickname">Apelido</label>
-            <input type="text" name="nickname" id="nickname">
+            <input type="text" name="nickname" id="nickname" placeholder="Apelido">
             <br>
             <label for="image">Foto de perfil</label>
             <input type="file" name="image" id="image">
@@ -80,15 +80,16 @@
             <input type="color" name="color" id="color">
             <br>
             <label for="bio">Biografia</label>
-            <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+            <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Digite sua biografia aqui."></textarea>
             <br>
             <label for="url">URL Personalizada</label>
-            <input type="url" name="url" id="url">
+            <input type="url" name="url" id="url" placeholder="http://exemplo.com">
         </fieldset>
 
         <fieldset>
             <legend>Termos e condições</legend>
-            <label for=""></label>
+            <input type="checkbox" name="termos" id="termos" required>
+            <label>Eu concordo com os <a href="./termos.html" target="_blank">termos e condições</a>.</label>
         </fieldset>
         <br><br>
         <button>Enviar</button>
