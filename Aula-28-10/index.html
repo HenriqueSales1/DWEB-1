@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
@@ -18,11 +19,11 @@
             <label for="email">E-mail</label>
             <input type="email" name="email" id="email" placeholder="exemplo@email.com">
             <br>
-            <label for="password">Senha</label>
-            <input type="password" name="password" id="password">
-            <br>
             <label for="cpf">CPF</label>
             <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00" pattern="^\d{3}\.\d{3}\.\d{3}-\d{2}$">
+            <br>
+            <label for="password">Senha</label>
+            <input type="password" name="password" id="password">
             <br>
             <label for="gender">Sexo</label>
             <br>
@@ -43,14 +44,14 @@
         <fieldset>
             <legend>Endereço</legend>
             <label for="Estado">Estado</label>
-            <select name="estado" id="estado">
+            <select class="select" name="estado" id="estado">
                 <option value="null">- Selecione o Estado -</option>
                 <option value="MG">Minas Gerais</option>
                 <option value="N/A">Outro</option>
             </select>
             <br>
             <label for="cidade">Cidade</label>
-            <select name="cidade" id="cidade">
+            <select class="select" name="cidade" id="cidade">
                 <option value="null">- Selecione a Cidade -</option>
                 <option value="GHS">Guanhães</option>
                 <option value="N/A">Outro</option>
@@ -74,7 +75,7 @@
             <input type="text" name="nickname" id="nickname" placeholder="Apelido">
             <br>
             <label for="image">Foto de perfil</label>
-            <input type="file" name="image" id="image">
+            <input class="input" type="file" name="image" id="image">
             <br>
             <label for="color">Cor do background do perfil</label>
             <input type="color" name="color" id="color">
@@ -92,8 +93,8 @@
             <label>Eu concordo com os <a href="./termos.html" target="_blank">termos e condições</a>.</label>
         </fieldset>
         <br><br>
-        <button>Enviar</button>
-        <button type="reset">Cancelar</button>
+        <button class="button_save">Enviar</button>
+        <button class="button_cancel" type="reset">Cancelar</button>
     </form>
 
 </body>
