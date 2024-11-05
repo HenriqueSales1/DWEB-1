@@ -1,0 +1,21 @@
+body {
+    border-top: blue solid 7px;
+}
+
+h1 {
+    border-right: 3px dotted red;
+}
+
+h3 {
+    border: 4px groove black;
+}
+
+div {
+    border: 0.5px solid salmon;
+    border-bottom-width: 10px;
+    padding: 10px;
+}
+
+button{
+    margin: 0px 3px;
+}
