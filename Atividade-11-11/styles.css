@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /*  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
     background-color: #191919;
     color: #f1f1f1;
+    font-family: "Montserrat", sans-serif;
 }
 
-ul {
+.navbar {
     list-style-type: none;
     left: 0;
     top: 0;
@@ -49,17 +52,15 @@ li a:hover {
 }
 
 .adjust {
-    padding: 20px 15px;
+    padding: 20px 15px 0px;
     border: none;
     list-style: left;
 }
 
 .adjust li {
     text-align: center;
-    /* Centraliza o texto em relação à imagem */
     display: flex;
     flex-direction: column;
-    /* Alinha imagem e texto verticalmente */
 }
 
 p {
@@ -67,9 +68,43 @@ p {
     text-align: center;
 }
 
+.main-text {
+    padding: 30px;
+}
+
+.desc-text {
+    font-size: small;
+    padding: 20px;
+}
+
 .pics {
     padding: 0;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.pic-single-target {
+    padding: 0px 55px;
+    border-radius: 100%;
+}
+
+.pics-alt {
+    margin: 15px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.video {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.title-alt {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
 }
