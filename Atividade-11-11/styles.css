@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-* {
+*.bodydefaults {
     /*  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
     background-color: #191919;
     color: #f1f1f1;
@@ -32,7 +32,7 @@ li:last-child {
     border-right: none;
 }
 
-li a {
+li a.link {
     color: #f1f1f1;
     display: block;
     padding: 8px 16px;
@@ -66,7 +66,8 @@ li a:hover {
     flex-direction: column;
 }
 
-p {
+p.desc {
+    margin: 40px 40px;
     font-size: x-large;
     text-align: center;
 }
@@ -78,6 +79,7 @@ p {
 .desc-text {
     font-size: small;
     padding: 20px;
+    text-align: center;
 }
 
 .pics {
@@ -119,7 +121,7 @@ p {
 }
 
 footer {
-    background-color: #fff;
+    background-color: #272727;
     /* left: 0;
     bottom: 0;
     height: 200px;
@@ -129,7 +131,8 @@ footer {
 
 .footer-container {
     width: 100%;
-    padding: 70px 30px 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .icon {
@@ -149,4 +152,9 @@ footer {
     font-size: 2em;
     color: black;
     opacity: 0.9;
+}
+
+p.footertext {
+    display: flex;
+    justify-content: center;
 }
