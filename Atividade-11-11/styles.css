@@ -55,7 +55,7 @@ li a:hover {
 }
 
 .adjust {
-    padding: 20px 15px 0px;
+    margin: 20px 15px 0px;
     border: none;
     list-style: left;
 }
@@ -67,7 +67,7 @@ li a:hover {
 }
 
 p.desc {
-    margin: 40px 40px;
+    margin: 20px 20px;
     font-size: x-large;
     text-align: center;
 }
