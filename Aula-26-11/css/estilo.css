@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #191919;
+  color: #d1d1d1;
+}
+
+header {
+  top: 0;
+  background-color: #272727;
+  margin: 10px;
+}
+header h3 {
+  text-align: center;
+}
+header h3:hover {
+  color: #696969;
+}
+
+main h3 {
+  display: flex;
+  justify-content: center;
+}
+main h3:hover {
+  transform: rotate(10deg);
+}
+
+p {
+  border: 1px solid #fff;
+  color: #d1d1d1;
+  background-color: #262626;
+  padding: 10px;
+  margin: 10px;
+}
+
+#button-div {
+  display: flex;
+  justify-content: center;
+  border: none;
+}
+#button-div button {
+  border-radius: 0px;
+  margin: 5px;
+  padding: 10px 30px;
+}
+#button-div button:hover {
+  color: #d1d1d1;
+  background-color: #696969;
+}
+#button-div button:active {
+  color: #fff;
+  background-color: #272727;
+}

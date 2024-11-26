@@ -1,0 +1,68 @@
+@charset "UTF-8";
+@use 'cores';
+
+@mixin alert($cor_borda: #fff, $cor_fundo: #262626, $cor_fonte: transparent) {
+    border: 1px solid $cor_borda;
+    color: cores.$color3;
+    background-color: $cor_fundo;
+    padding: 10px;
+    margin: 10px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: cores.$color1;
+    color: cores.$color3;
+}
+
+header {
+    top: 0;
+    background-color: cores.$color2;
+    margin: 10px;
+
+    h3 {
+        text-align: center;
+
+        &:hover {
+            color: cores.$color4;
+        }
+    }
+}
+
+main {
+    h3 {
+        display: flex;
+        justify-content: center;
+    }
+    h3:hover {
+        // animation: round($number: 0);
+        transform: rotate(10deg);
+    }
+}
+
+p {
+    @include alert;
+}
+
+#button-div {
+    display: flex;
+    justify-content: center;
+    border: none;
+
+    button {
+        border-radius: 0px;
+        margin: 5px;
+        padding: 10px 30px;
+    }
+
+    button:hover {
+        color: cores.$color3;
+        background-color: cores.$color4;
+    }
+
+    button:active {
+        color: #fff;
+        background-color: cores.$color2;
+    }
+}
