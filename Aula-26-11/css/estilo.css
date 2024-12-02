@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Yuji+Mai&display=swap");
+* {
+  font-family: "DM Sans", sans-serif;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -13,7 +18,7 @@ header {
 header h3 {
   text-align: center;
 }
-header h3:hover {
+header h3 hover {
   color: #696969;
 }
 
@@ -50,4 +55,19 @@ p {
 #button-div button:active {
   color: #fff;
   background-color: #272727;
+}
+
+.botao-deletar, .botao-confirmar {
+  padding: 7px w/5 px;
+  font-size: 1.2rem;
+}
+
+.botao-confirmar {
+  background-color: green;
+  color: #191919;
+}
+
+.botao-deletar {
+  background-color: red;
+  color: #191919;
 }

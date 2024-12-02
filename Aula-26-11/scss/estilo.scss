@@ -1,5 +1,12 @@
 @charset "UTF-8";
 @use 'cores';
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Yuji+Mai&display=swap');
+
+* {
+    font-family: "DM Sans", sans-serif;
+}
+
+$w: 100;
 
 @mixin alert($cor_borda: #fff, $cor_fundo: #262626, $cor_fonte: transparent) {
     border: 1px solid $cor_borda;
@@ -39,7 +46,7 @@ main {
     }
 
     h3:hover {
-        // animation: round($number: 0);
+        // animation: ;
         transform: rotate(10deg);
     }
 }
@@ -68,4 +75,21 @@ p {
         color: #fff;
         background-color: cores.$color2;
     }
+}
+
+%botao {
+    padding: 7px (w/5)px;
+    font-size: 1.2rem;
+}
+
+.botao-confirmar {
+    @extend %botao;
+    background-color: green;
+    color: cores.$color1;
+}
+
+.botao-deletar {
+    @extend %botao;
+    background-color: red;
+    color: cores.$color1;
 }
