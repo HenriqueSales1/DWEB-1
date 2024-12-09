@@ -94,25 +94,32 @@ function testeObjeto2() {
 
 function testeArrayComObjeto() {
   var pessoas = [{
-    "nome": "Rosinei",
-    "idade": 21
+    nome: "Rosinei",
+    idade: 21
   }, {
-    "nome": "Igor",
-    "idade": 21
+    nome: "Igor",
+    idade: 21
   }, {
-    "nome": "Lucas",
-    "idade": 21
+    nome: "Lucas",
+    idade: 21
   }];
 
   for (var i = 0; i < pessoas.length; i++) {
-    console.log(pessoas[i].nome, ': ', pessoas[i].idade);
+    console.log(pessoas[i].nome, ": ", pessoas[i].idade);
   }
 }
 
 function testeArrayComObjeto2() {
-  var pessoas = {
-    "nome": "Ilda",
-    "idade": 45,
-    "dependentes": ['Ana', 'Paulo', 'Isaias']
+  var pessoa = {
+    nome: "Ilda",
+    idade: 45,
+    dependentes: ["Ana", "Paulo", "Isaias"]
   };
+  console.log("Nome: ".concat(pessoa.nome));
+  console.log("Idade: ".concat(pessoa.idade));
+  console.log("Dependentes: ".concat(pessoa.dependentes));
+
+  for (var i = 0; i < pessoa.dependentes.length; i++) {
+    console.log(pessoa.dependentes);
+  }
 }
