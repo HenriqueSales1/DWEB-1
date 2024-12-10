@@ -1,38 +1,42 @@
-let ver = [false, false, false];
+"use strict";
 
-const troca = (event) => {
-  if ((ver[0] == false)) {
-    const img = document.getElementById("troca1");
+var ver = [false, false, false];
+
+var troca = function troca(event) {
+  if (ver[0] == false) {
+    var img = document.getElementById("troca1");
     img.src = event.target.src;
     ver[0] = true;
   } else if (ver[1] == false) {
-    const img = document.getElementById("troca2");
-    img.src = event.target.src;
+    var _img = document.getElementById("troca2");
+
+    _img.src = event.target.src;
     ver[1] = true;
   } else if (ver[2] == false) {
-    const img = document.getElementById("troca3");
-    img.src = event.target.src;
+    var _img2 = document.getElementById("troca3");
+
+    _img2.src = event.target.src;
     ver[2] = true;
   }
 };
 
-const limpa = (event) => {
-    if(ver[0] == true){
-        const img = document.getElementById('troca1');
-        img.src = './img/joker.png';
-        ver[0] = false;
-    }
-    else if(ver[1] == true){
-        const img = document.getElementById('troca2');
-        img.src = './img/joker.png';
-        ver[1] = false;
-    }
-    else if(ver[2] == true){
-        const img = document.getElementById('troca3');
-        img.src = './img/joker.png';
-        ver[2] = false;
-    }
-}
+var limpa = function limpa(event) {
+  if (ver[0] == true) {
+    var img = document.getElementById('troca1');
+    img.src = './img/joker.png';
+    ver[0] = false;
+  } else if (ver[1] == true) {
+    var _img3 = document.getElementById('troca2');
+
+    _img3.src = './img/joker.png';
+    ver[1] = false;
+  } else if (ver[2] == true) {
+    var _img4 = document.getElementById('troca3');
+
+    _img4.src = './img/joker.png';
+    ver[2] = false;
+  }
+};
 
 document.getElementById("troca1").addEventListener('click', limpa);
 document.getElementById("troca2").addEventListener('click', limpa);

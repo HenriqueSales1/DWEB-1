@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Yuji+Mai&display=swap");
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #272727;
+}
+
+header {
+  margin: 20px;
+  background-color: #363636;
+}
+header h1 {
+  display: flex;
+  color: whitesmoke;
+  align-items: center;
+  justify-content: center;
+}
+header h1:hover {
+  color: #acacac;
+}
+
+#sec1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#sec1 img {
+  width: 288px;
+  height: 403px;
+  margin: 10px;
+}
+
+#sec2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#sec2 img {
+  width: 178px;
+  height: 253px;
+  margin: 6px;
+}
+
+footer p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: whitesmoke;
+}
