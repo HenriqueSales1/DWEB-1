@@ -1,12 +1,17 @@
-import trocador from "./functions.js";
+// import trocador from "./functions.js";
+import troca from "./functions.js";
 
-// function executora(f){
-//     f();
-// }
+/*
+function executora(f){
+    f();
+}
+*/
 
-// function minhaFuncao(){
-//     alert('Executada.');
-// }
+/*
+function minhaFuncao(){
+    alert('Executada.');
+}
+*/
 
 // minhaFuncao();
 
@@ -40,11 +45,11 @@ import trocador from "./functions.js";
 // executora(() => alert('Teste'));
 
 window.addEventListener("load", () => {
-  alert("Janela carregada");
+  // alert("Janela carregada");
 });
 
 const botao01 = document.getElementById('botao1');
-botao01.addEventListener('click', trocador.jonesy1);
+botao01.addEventListener('click', troca);
 
 const botao02 = document.getElementById('botao2');
-botao02.addEventListener('click', trocador.jonesy2);
+botao02.addEventListener('click', troca);

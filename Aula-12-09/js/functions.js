@@ -12,6 +12,8 @@
 
 // export { jonesy1, jonesy2 };
 
+
+/*
 const trocador = {
   jonesy1: () => {
     const img01 = document.getElementById("img1");
@@ -26,3 +28,17 @@ const trocador = {
 };
 
 export default trocador;
+*/
+
+const troca = (event) => {
+  // alert(event.target.innerText);
+  const img = document.getElementById('img1')
+  if (event.target.innerText == 'Botao 1') {
+    img.src = './img/imagem2.jpg';
+    console.log('imagem 1 carregada')
+  } else if (event.target.innerText == 'Botao 2') {
+    img.src = './img/imagem.jpg';
+  }
+};
+
+export default troca;

@@ -4,12 +4,19 @@ var _functions = _interopRequireDefault(require("./functions.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-// function executora(f){
-//     f();
-// }
-// function minhaFuncao(){
-//     alert('Executada.');
-// }
+// import trocador from "./functions.js";
+
+/*
+function executora(f){
+    f();
+}
+*/
+
+/*
+function minhaFuncao(){
+    alert('Executada.');
+}
+*/
 // minhaFuncao();
 // -----------------------------------------------
 // function executora (f){
@@ -31,10 +38,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 //     f();
 // }
 // executora(() => alert('Teste'));
-window.addEventListener("load", function () {
-  alert("Janela carregada");
+window.addEventListener("load", function () {// alert("Janela carregada");
 });
 var botao01 = document.getElementById('botao1');
-botao01.addEventListener('click', _functions["default"].jonesy1);
+botao01.addEventListener('click', _functions["default"]);
 var botao02 = document.getElementById('botao2');
-botao02.addEventListener('click', _functions["default"].jonesy2);
+botao02.addEventListener('click', _functions["default"]);
