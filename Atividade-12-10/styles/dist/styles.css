@@ -1,4 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Yuji+Mai&display=swap");
+@keyframes animLowerRow {
+  from {
+    width: 178px;
+    height: 253px;
+    transform: rotate(0deg);
+  }
+  to {
+    width: 198px;
+    height: 273px;
+    transform: rotate(10deg);
+  }
+}
+@keyframes animLowerRowOnClick {
+  from {
+    width: 178px;
+    height: 253px;
+  }
+  to {
+    width: 168px;
+    height: 243px;
+  }
+}
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #272727;
@@ -38,6 +60,19 @@ header h1:hover {
   width: 178px;
   height: 253px;
   margin: 6px;
+}
+#sec2 img:hover {
+  animation-name: animLowerRow;
+  animation-duration: 700ms;
+  width: 198px;
+  height: 273px;
+  transform: rotate(10deg);
+}
+#sec2 img:active {
+  animation-name: animLowerRowOnClick;
+  animation-duration: 600ms;
+  width: 168px;
+  height: 243px;
 }
 
 footer p {
