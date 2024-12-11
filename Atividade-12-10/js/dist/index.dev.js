@@ -3,51 +3,29 @@
 var ver = [false, false, false];
 
 var troca = function troca(event) {
-  if (ver[0] == false) {
-    var img = document.getElementById("troca1");
+  var iSplit = event.target.id.split('imagem');
+
+  if (!ver[Number(iSplit[1])]) {
+    var img = document.getElementById('troca' + iSplit[1]);
     img.src = event.target.src;
-    ver[0] = true;
-  } else if (ver[1] == false) {
-    var _img = document.getElementById("troca2");
-
-    _img.src = event.target.src;
-    ver[1] = true;
-  } else if (ver[2] == false) {
-    var _img2 = document.getElementById("troca3");
-
-    _img2.src = event.target.src;
-    ver[2] = true;
+    ver[Number(iSplit[1])] = true;
   }
 };
 
 var limpa = function limpa(event) {
-  if (ver[0] == true) {
-    var img = document.getElementById('troca1');
+  var eSplit = event.target.id.split("troca");
+
+  if (ver[Number(eSplit[1])]) {
+    var img = document.getElementById('troca' + eSplit[1]);
     img.src = './img/joker.png';
-    ver[0] = false;
-  } else if (ver[1] == true) {
-    var _img3 = document.getElementById('troca2');
-
-    _img3.src = './img/joker.png';
-    ver[1] = false;
-  } else if (ver[2] == true) {
-    var _img4 = document.getElementById('troca3');
-
-    _img4.src = './img/joker.png';
-    ver[2] = false;
+    ver[Number(eSplit[1])] = false;
   }
 };
 
-document.getElementById("troca1").addEventListener('click', limpa);
-document.getElementById("troca2").addEventListener('click', limpa);
-document.getElementById("troca3").addEventListener('click', limpa);
-document.getElementById("imagem1").addEventListener("click", troca);
-document.getElementById("imagem2").addEventListener("click", troca);
-document.getElementById("imagem3").addEventListener("click", troca);
-document.getElementById("imagem4").addEventListener("click", troca);
-document.getElementById("imagem5").addEventListener("click", troca);
-document.getElementById("imagem6").addEventListener("click", troca);
-document.getElementById("imagem7").addEventListener("click", troca);
-document.getElementById("imagem8").addEventListener("click", troca);
-document.getElementById("imagem9").addEventListener("click", troca);
-document.getElementById("imagem10").addEventListener("click", troca);
+for (var i = 0; i <= 2; i++) {
+  document.getElementById("troca".concat(i)).addEventListener('click', limpa);
+}
+
+for (var _i = 0; _i <= 9; _i++) {
+  document.getElementById("imagem".concat(_i)).addEventListener('click', troca);
+}
