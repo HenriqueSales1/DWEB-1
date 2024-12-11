@@ -1,11 +1,27 @@
 let ver = [false, false, false];
 
+// const troca = (event) => {
+//   const iSplit = event.target.id.split('imagem');
+//   if (!(ver[Number(iSplit[1])])) {
+//     const img = document.getElementById('troca' + (iSplit[1]));
+//     img.src = event.target.src;
+//     ver[Number(iSplit[1])] = true;
+//   }
+// };
+
 const troca = (event) => {
-  const iSplit = event.target.id.split('imagem');
-  if (!(ver[Number(iSplit[1])])) {
-    const img = document.getElementById('troca' + (iSplit[1]));
+  if ((ver[0] == false)) {
+    const img = document.getElementById("troca0");
     img.src = event.target.src;
-    ver[Number(iSplit[1])] = true;
+    ver[0] = true;
+  } else if (ver[1] == false) {
+    const img = document.getElementById("troca1");
+    img.src = event.target.src;
+    ver[1] = true;
+  } else if (ver[2] == false) {
+    const img = document.getElementById("troca2");
+    img.src = event.target.src;
+    ver[2] = true;
   }
 };
 
