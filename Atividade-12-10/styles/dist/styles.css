@@ -3,12 +3,10 @@
   from {
     width: 178px;
     height: 253px;
-    transform: rotate(0deg);
   }
   to {
     width: 198px;
     height: 273px;
-    transform: rotate(10deg);
   }
 }
 @keyframes animLowerRowOnClick {
@@ -63,14 +61,13 @@ header h1:hover {
 }
 #sec2 img:hover {
   animation-name: animLowerRow;
-  animation-duration: 700ms;
+  animation-duration: 300ms;
   width: 198px;
   height: 273px;
-  transform: rotate(10deg);
 }
 #sec2 img:active {
   animation-name: animLowerRowOnClick;
-  animation-duration: 600ms;
+  animation-duration: 250ms;
   width: 168px;
   height: 243px;
 }

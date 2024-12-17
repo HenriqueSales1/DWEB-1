@@ -3,12 +3,12 @@
   from {
     width: 178px;
     height: 253px;
-    transform: rotate(0deg);
+    // transform: rotate(0deg);
   }
   to {
     width: 198px;
     height: 273px;
-    transform: rotate(10deg);
+    // transform: rotate(10deg);
   }
 }
 
@@ -63,14 +63,14 @@ header {
     margin: 6px;
     &:hover {
       animation-name: animLowerRow;
-      animation-duration: 700ms;
+      animation-duration: 300ms;
       width: 198px;
       height: 273px;
-      transform: rotate(10deg);
+      // transform: rotate(10deg);
     }
     &:active {
       animation-name: animLowerRowOnClick;
-      animation-duration: 600ms;
+      animation-duration: 250ms;
       width: 168px;
       height: 243px;
     }
