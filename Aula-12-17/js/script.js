@@ -39,7 +39,7 @@ function testeBusca() {
 function buscaCSSTexto() {
   const h1 = document.querySelector("header h1");
   const h3 = document.querySelector("footer h3");
-  const tabela = document.querySelector("table")
+  const tabela = document.querySelector("table");
 
   h1.innerText = "Titulo Novo";
   h1.style.color = "#464646";
@@ -48,24 +48,35 @@ function buscaCSSTexto() {
 
   h3.className = "titulo-13";
 
-  tabela.classList.toggle('tabela');
+  tabela.classList.toggle("tabela");
 }
 
-function testeCriarEEncaixar(e){
-    e.preventDefault();
-    const corpoTable = document.getElementById("corpo_tabela");
-    const inputName = document.getElementById("nome");
-    const tr = document.createElement('tr');
-    const td1 = document.createElement('td');
-    const td2 = document.createElement('td');
-    const td3 = document.createElement('td');
+function testeRemover(e) {
+  const texto = event.target.getAttribute("data-texto");
+  if (confirm(`Apagar ${texto}?`)) {
+    event.target.parentNode.parentNode.remove();
+  }
+}
 
-    td1.innerText = '#'
-    td2.innerText = inputName.value;
-    td3.innerText = 'Ação';
+function testeCriarEEncaixar(e) {
+  e.preventDefault();
+  const corpoTable = document.getElementById("corpo_tabela");
+  const inputName = document.getElementById("nome");
+  const tr = document.createElement("tr");
+  const td1 = document.createElement("td");
+  const td2 = document.createElement("td");
+  const td3 = document.createElement("td");
+  const btEx = document.createElement("button");
+  btEx.innerText = "Excluir";
+  btEx.setAttribute("data-texto", inputName.value);
+  btEx.addEventListener("click", testeRemover);
 
-    tr.append(td1, td2, td3);
-    corpoTable.append(tr);
+  td1.innerText = "#";
+  td2.innerText = inputName.value;
+  td3.append(btEx);
+
+  tr.append(td1, td2, td3);
+  corpoTable.append(tr);
 }
 
 const bt1 = document.getElementById("bt01");
@@ -80,5 +91,5 @@ bt3.addEventListener("click", testeBusca);
 const bt4 = document.getElementById("bt04");
 bt4.addEventListener("click", buscaCSSTexto);
 
-const formSubmit = document.querySelector('form')
-formSubmit.addEventListener("click", testeCriarEEncaixar);
+const formSubmit = document.querySelector("form");
+formSubmit.addEventListener("submit", testeCriarEEncaixar);

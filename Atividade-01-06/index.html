@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade 06/01</title>
+  </head>
+  <body>
+    <h1>Atividade</h1>
+    <main>
+      <form action="">
+        <div>
+          <label for="name">Nome:</label>
+          <input type="text" id="name" name="name" />
+        </div>
+        <div>
+          <label for="lastname">Sobrenome:</label>
+          <input type="text" id="lastname" name="lastname" />
+        </div>
+        <div>
+          <label for="birthday">Data de nascimento:</label>
+          <input type="date" id="birthday" name="birthday" />
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+        </div>
+        <div>
+          <label for="username">Nome de usuário:</label>
+          <input type="text" id="username" name="username" />
+        </div>
+        <div>
+          <label for="password">Senha:</label>
+          <input type="password" id="password" name="password" />
+        </div>
+        <div>
+          <label for="confirm_password">Confirme a senha:</label>
+          <input
+            type="password"
+            id="confirm_password"
+            name="confirm_password"
+          />
+        </div>
+        <button>Submit</button>
+      </form>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Sobrenome</th>
+            <th>Nome de usuário</th>
+            <th>Email</th>
+            <th>Data de nascimento</th>
+            <th>Ação</th>
+          </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+      </table>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
