@@ -11,18 +11,18 @@ class controleCarta
         $preparado->bindValue(1, $nome);
         $preparado->bindValue(2, $descricao);
         if ($preparado->execute()) {
-            echo "Carta inserida com sucesso";
+            return ['status' => 'Gravou'];
         } else {
-            echo "Erro ao inserir carta: ";
-            echo $preparado->errorInfo();
+            return ['status' => 'Erro'];
         }
     }
 
-    public function listar (){
+    public function listar()
+    {
         $sql = 'select * from cartas';
         $preparado = Conexao::preparaComando($sql);
-        if($preparado->execute()){
-            $todos = $preparado->fetchAll();
+        if ($preparado->execute()) {
+            $todos = $preparado->fetchAll(PDO::FETCH_ASSOC);
         }
         return $todos;
     }
