@@ -5,8 +5,8 @@ class controleCarta
     public function inserir()
     {
         $sql = 'insert into cartas (nome, descricao) values (?,?)';
-        $nome = 'Carta base';
-        $descricao = 'Essa é uma carta base';
+        $nome = filter_input(INPUT_POST, 'nome');
+        $descricao = filter_input(INPUT_POST, 'descricao');
         $preparado = Conexao::preparaComando($sql);
         $preparado->bindValue(1, $nome);
         $preparado->bindValue(2, $descricao);
