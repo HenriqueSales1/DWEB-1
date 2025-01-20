@@ -1,32 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+require_once './controleCarta.php';
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+$controle = new controleCarta();
+$lista = $controle->listar();
 
-<body>
-    <?php
-    require_once './controleCarta.php';
-
-    $controle = new controleCarta();
-    $lista = $controle->listar();
-
-    var_dump($controle->inserir());
-
-    foreach($lista as $carta){
-        echo '<h2>';
-        echo $carta['nome'];
-        echo '</h2>';
-        echo '<p>';
-        echo $carta['descricao'];
-        echo '</p>';
-    }
-
-    ?>
-
-</body>
-
-</html>
+var_dump($controle->inserir());
