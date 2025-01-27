@@ -14,6 +14,7 @@ if (class_exists($classeControle)) {
 }
 
 echo json_encode($saida);
+
 /*
 $controle = new controleCarta();
 $controle->inserir();
