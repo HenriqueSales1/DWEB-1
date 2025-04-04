@@ -38,7 +38,33 @@ const limpa = (event) => {
 for (let i = 0; i <= 2; i++) {
   document.getElementById(`troca${i}`).addEventListener("click", limpa);
 }
+// sendLog("info", `teste`);
 
 for (let i = 0; i <= 9; i++) {
   document.getElementById(`imagem${i}`).addEventListener("click", troca);
+  document.getElementById(`imagem${i}`).addEventListener("click", sendLog());
 }
+// sendLog("info", `teste`);
+
+function sendLog(level, message) {
+  fetch('./index.php', {
+      method: 'POST',
+      headers: {
+          'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ level: level, message: message })
+  })
+  .then(response => response.json())
+  .then(data => {
+      if (data.status === 'success') {
+          console.log('Log sent successfully');
+      } else {
+          console.error('Failed to send log:', data.message);
+      }
+  })
+  .catch(error => console.error('Error:', error));
+}
+
+// Example usage
+sendLog('info', 'This is an info message from JavaScript');
+sendLog('error', 'This is an error message from JavaScript');
